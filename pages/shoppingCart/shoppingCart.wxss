@@ -1,0 +1,62 @@
+.lssc-cart .cart-list .list-item {
+  height: 150rpx;
+  display: flex;
+  width: 100vw;
+  padding: 10rpx;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+}
+.lssc-cart .cart-list .list-item .middle {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.lssc-cart .cart-list .list-item .middle .bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.lssc-cart .cart-list .list-item .right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.lssc-cart .cart-bottom {
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  display: flex;
+  width: 100vw;
+  background-color: #a79770;
+  justify-content: space-between;
+  align-items: center;
+}
+.lssc-cart .cart-bottom .left {
+  display: flex;
+  color: white;
+}
+.lssc-cart .cart-bottom .left icon {
+  margin-left: 20rpx;
+}
+.lssc-cart .cart-bottom .left .text {
+  margin-left: 20rpx;
+}
+.lssc-cart .cart-bottom .right {
+  display: flex;
+  color: white;
+}
+.lssc-cart .cart-bottom .right .totalPrice {
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}
+.lssc-cart .cart-bottom .right .pay {
+  margin-right: 20rpx;
+}
+.lssc-cart .cart-bottom .right .pay image {
+  width: 50rpx;
+}

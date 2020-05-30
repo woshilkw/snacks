@@ -1,0 +1,43 @@
+<view class="lssc-index"> 
+  <!-- 轮播图开始 -->
+  <view class="index-slide">
+    <swiper class="slide-swiper" autoplay indicator-dots 
+      indicator-color="#8f867c" indicator-active-color="black"
+    >
+      <swiper-item wx:for="{{swiper_list}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+  <!-- 精选主题开始 -->
+  <view class="index-theme">
+    <!-- 主题标题 -->
+    <view class="theme-title">精选主题</view>
+    <!-- 主题图片区 -->
+    <view class="theme-imgs">
+      <view class="imgs-items">
+        <navigator url="/pages/cateWorld/cateWorld?id={{item.id}}"  wx:for="{{theme_list}}" wx:key="index" class="items-list">
+          <image src="{{item.image_url}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 精选主题结束 -->
+  <!-- 最近新品开始 -->
+    <view class="index-new">
+    <!-- 新品标题 -->
+    <view class="new-title">最近新品</view>
+    <!-- 新品图片区 -->
+    <view class="new-imgs">
+      <view class="imgs-items" wx:for="{{fruitsObj}}" wx:key="index">
+        <navigator url="/pages/melon/melon?id={{item.id}}">
+          <image src="{{item.imageUrl}}"></image>
+          <view>{{item.title+" "+item.count+item.unit}}</view>
+          <view>¥ {{item.price}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 最近新品结束 -->
+</view>

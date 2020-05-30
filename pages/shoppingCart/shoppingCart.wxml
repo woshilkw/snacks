@@ -1,0 +1,54 @@
+<view class="lssc-cart">
+  <!-- 空白小车图片开始 -->
+  <block class="cart-empty" wx:if="{{carts.length === 0}}">
+    <image src="../../image/empty_cart.jpeg" mode="widthFix"></image>
+  </block>
+  <!-- 空白小车图片结束 -->
+  <!-- 购物小车商品列表开始 -->
+  <view class="cart-list">
+    <view class="list-item" wx:for="{{carts}}" wx:key="index">
+      <view class="left" bindtap="handleItemCheck" data-index="{{index}}">
+        <block wx:if="{{item.checked}}">
+          <icon type="success" color="red"></icon>
+        </block>
+        <block wx:else>
+          <icon type="circle"></icon>
+        </block>
+      </view>
+      <view class="middle">
+        <view class="top">
+          {{item.data.title}}{{item.data.count}}{{item.data.unit}}
+        </view>
+        <view class="bottom">
+          <view class="sub" bindtap="sub" data-index="{{index}}">-</view>
+          <view class="num">{{item.num}}</view>
+          <view class="add" bindtap="add" data-index="{{index}}">+</view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="top">¥{{item.data.price}}</view>
+        <view class="bottom" bindtap="removeItem"
+        data-index="{{index}}"
+        >x</view>
+      </view>
+    </view>
+  </view>
+  <!-- 购物小车商品列表结束 -->
+  <view class="cart-bottom">
+    <view class="left">
+      <icon type="success_circle" color="white"
+        bindtap="handleAllCheck"
+      ></icon>
+      <view class="text">全选</view>
+    </view>
+    <view class="right">
+      <!-- 总价 -->
+      <view class="totalPrice">¥{{totalPrice}}</view>
+      <navigator url="/pages/pay/pay" 
+      open-type="navigate"
+      class="pay" wx:if="{{carts.length != 0}}">
+        <image src="/image/icon3.png" mode="widthFix"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

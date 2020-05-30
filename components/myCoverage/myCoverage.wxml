@@ -1,0 +1,20 @@
+    <!-- 展示图片开始 -->
+    <view class="cateWorld-showImg">
+      <image src="{{obj.bannerList}}" class="showImg-img"></image>
+    </view>
+    <!-- 展示图片结束 -->
+    <!-- 图片区开始 -->
+    <view class="cateWorld-imgs">
+      <block wx:for="{{obj.shopList}}" wx:key="index">
+        <view class="imgs-item">
+          <navigator class="item-img" url="/pages/melon/melon?id={{item.id}}">
+            <image src="{{item.imageUrl}}" class="img-img">
+            </image>
+          </navigator>
+          <view class="item-view1">{{item.title}} {{item.count + item.unit}}</view>
+          <view class="item-view2">¥ {{item.price}}</view>
+        </view>
+      </block>
+    </view>
+    <!-- 图片区结束 -->
+

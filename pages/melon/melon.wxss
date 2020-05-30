@@ -1,0 +1,117 @@
+.lssc-melon {
+  background-color: #e2e5e2;
+}
+.lssc-melon .melon-preview {
+  position: relative;
+  display: flex;
+  background-color: #fefffd;
+}
+.lssc-melon .melon-preview .preview-one {
+  width: 300rpx;
+  height: 300rpx;
+  margin-left: 250rpx;
+  margin-top: 80rpx;
+}
+.lssc-melon .melon-preview .preview-one image {
+  width: 100%;
+  height: 100%;
+}
+.lssc-melon .melon-preview .preview-two {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 40rpx;
+  margin-left: 80rpx;
+}
+.lssc-melon .melon-preview .preview-two image {
+  width: 100%;
+  height: 100%;
+}
+.lssc-melon .melon-preview .preview-three{
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  line-height: 50rpx;
+  background-color: #a9966e;
+  font-size: 30rpx;
+  position: absolute;
+  right: 84rpx;
+  top: 42rpx;
+}
+.lssc-melon .melon-preview .hide{
+  display: none;
+}
+.lssc-melon .melon-shop {
+  background-color: #fefffd;
+  padding-top: 100rpx;
+  position: relative;
+}
+.lssc-melon .melon-shop .shop-frame {
+  width: 90%;
+  height: 100rpx;
+  background-color: #b1a278;
+  border-radius: 50rpx;
+  margin: auto;
+  color: #e0d8bd;
+  font-size: 30rpx;
+  display: flex;
+}
+.lssc-melon .melon-shop .shop-frame .frame-one {
+  width: 35%;
+  line-height: 100rpx;
+  text-align: center;
+  margin-left: 50rpx;
+}
+.lssc-melon .melon-shop .shop-frame .frame-two {
+  width: 10%;
+  margin-left: 50rpx;
+  line-height: 100rpx;
+}
+.lssc-melon .melon-shop .shop-frame .frame-three {
+  width: 35%;
+  margin-left: 60rpx;
+  line-height: 100rpx;
+}
+.lssc-melon .melon-shop .shop-frame .frame-four {
+  width: 20%;
+}
+.lssc-melon .melon-shop .shop-frame .frame-four image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+}
+.lssc-melon .melon-shop .shop-state {
+  text-align: center;
+  margin-top: 30rpx;
+  color: #848589;
+}
+.lssc-melon .melon-shop .shop-title {
+  text-align: center;
+  margin-top: 30rpx;
+  color: #848589;
+}
+.lssc-melon .melon-shop .shop-spric {
+  text-align: center;
+  margin-top: 40rpx;
+  color: #848589;
+}
+.lssc-melon .melon-tabs {
+  background-color: #fefffd;
+  margin-top: 40rpx;
+}
+.lssc-melon .melon-tabs .tabs-message {
+  height: 100rpx;
+  display: flex;
+}
+.lssc-melon .melon-tabs .tabs-message view {
+  flex: 1;
+  color: #848589;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.lssc-melon .melon-tabs .tabs-message .active {
+  color: #afa37a;
+  border-bottom: 2px solid #afa37a;
+}

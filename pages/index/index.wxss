@@ -1,0 +1,61 @@
+.lssc-index {
+  background-color: #f7f9f6;
+}
+
+.lssc-index .index-slide .slide-swiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+.lssc-index .index-theme .theme-title {
+  height: 100rpx;
+  color: #babaa9;
+  line-height: 100rpx;
+  text-align: center;
+}
+.lssc-index .index-theme .theme-imgs .imgs-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lssc-index .index-theme .theme-imgs .imgs-items navigator {
+  width: 50%;
+  height: 380rpx;
+}
+.lssc-index .index-theme .theme-imgs .imgs-items .items-list:nth-child(3){
+  width: 100%;
+}
+.lssc-index .index-theme .theme-imgs .imgs-items navigator image {
+  width: 100%;
+  height: 100%;
+}
+
+.lssc-index .index-new .new-title {
+  height: 100rpx;
+  color: #b7ae85;
+  line-height: 100rpx;
+  text-align: center;
+}
+.lssc-index .index-new .new-imgs{
+  display: flex;
+  flex-wrap: wrap;
+}
+.lssc-index .index-new .new-imgs .imgs-items {
+  width: 40%;
+  margin-left: 50rpx;
+  margin-bottom: 20rpx;
+}
+.lssc-index .index-new .new-imgs .imgs-items navigator {
+  width: 100%;
+  height: 300rpx;
+  background-color: #e1e3e1;
+  border-radius: 10rpx;
+}
+.lssc-index .index-new .new-imgs .imgs-items navigator image {
+  width: 40%;
+  height: 40%;
+  margin-top: 20rpx;
+  margin-left: 90rpx;
+}
+.lssc-index .index-new .new-imgs .imgs-items navigator view {
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+<view class="lssc-pay">
+  <!-- 添加收货地址开始 -->
+  <navigator url="/pages/address/address" open-type="navigate" class="lssc-pay-address">
+    <block wx:if="{{address.userName}}">
+      <view class="top">
+        <text>收货人</text>
+        <text>{{address.userName}}</text>
+        <text>,电话</text>
+        <text>{{address.telNumber}}</text>
+      </view>
+      <view class="bottom">
+        <text>{{address.provinceName+address.cityName+address.countyName+address.detailInfo+","}}</text>
+        <text>邮编{{address.postalCode}}</text>
+      </view>
+    </block>
+    <block wx:else>
+      添加收货地址
+    </block>
+  </navigator>
+  <!-- 添加收货地址结束 -->
+  <!-- 商品列表开始 -->
+  <view class="lssc-pay-list">
+    <view class="list-item" wx:for="{{carts}}" wx:key="index">
+        <view class="left">
+          <view class="image-wrapper">
+            <image src="{{item.data.imageUrl}}"
+              mode="widthFix"
+            ></image>
+          </view>
+        </view>
+        <view class="right">
+          <view class="title">{{item.data.title}}</view>
+          <view class="price">¥{{item.data.price}}</view>
+          <view class="num">x{{item.num}}</view>
+        </view>
+    </view>
+  </view>
+  <!-- 商品列表结束 -->
+  <!-- 底部工具栏开始 -->
+  <view class="lssc-pay-bottom">
+    <view class="left">
+    付款合计:¥{{totalPrice}}
+    </view>
+    <view class="right" bindtap="pay">
+      去付款
+    </view>
+  </view>
+  <!-- 底部工具栏结束 -->
+
+</view>

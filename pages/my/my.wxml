@@ -1,0 +1,50 @@
+<view class="lssc-my">
+  <!-- 关于我们开始 -->
+  <view class="aboutUS">
+    关于我们
+  </view>
+  <!-- 关于我们结束 -->
+  <!-- 地址管理开始 -->
+
+  <navigator url="/pages/address/address" open-type="navigate" class="lssc-my-address">
+    地址管理
+  </navigator>
+  <view class="address-info">
+    <view class="userName">{{address.userName}}</view>
+    <view class="telNumber">{{address.telNumber}}</view>
+    <view class="address">{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+  </view>
+  <!-- 地址管理结束 -->
+
+  <!-- 我的订单开始 -->
+  <view class="lssc-my-order">
+    <view class="title">我的订单</view>
+    <view class="order-list">
+      <view class="order-list-item" wx:for="{{carts}}" wx:key="index">
+        <view class="order-number">订单编号:A413358</view>
+        <view class="order-content">
+          <view class="left">
+            <view class="image-wrapper">
+              <image src="{{item.data.imageUrl}}" mode="widthFix"></image>
+            </view>
+            <view class="desc">
+              <view class="title">{{item.data.title}}</view>
+              <view class="title">{{item.data.count}}{{item.data.unit}}</view>
+            </view>
+          </view>
+          <view class="right">
+            待付款
+          </view>
+        </view>
+        <view class="order-bottom">
+          <view class="left">
+          实付:¥{{item.num * item.data.price}}
+          </view>
+          <view class="right">付款</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的订单结束 -->
+
+</view>

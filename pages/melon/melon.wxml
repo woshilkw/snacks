@@ -1,0 +1,52 @@
+<view class="lssc-melon">
+  <!-- 预览图片开始 -->
+  <view class="melon-preview">
+    <view class="preview-one">
+      <image src="{{fruitsObj.imageUrl}}"></image>
+    </view>
+    <navigator class="preview-two" open-type="switchTab" url="../../pages/shoppingCart/shoppingCart">
+      <image src="../../image/cart.png"></image>
+    </navigator>
+    <view class="preview-three {{num === 0?'hide':''}}">{{num}}</view>
+  </view>
+  <!-- 预览图片结束 -->
+  <!-- 购物选择区开始 -->
+  <view class="melon-shop">
+    <view class="shop-frame">
+      <view class="frame-one">数量 {{fruitsObj.count*quantity+fruitsObj.unit}}</view>
+      <view class="frame-two" bindtap="addNum">+</view>
+      <view class="frame-three" bindtap="handleAddProduct" data-id="{{fruitsObj.id}}">加入购物车</view>
+     
+      <view class="frame-four" data-id="{{fruitsObj.id}}">
+        <image src="../../image/cart-o.png"></image>
+      </view>
+      
+    </view>
+    <view class="shop-state">{{fruitsObj.stock}}</view>
+    <view class="shop-title">{{fruitsObj.title}}</view>
+    <view class="shop-spric">¥ {{fruitsObj.price}}</view>
+  </view>
+  <!-- 购物选择区结束 -->
+  <!-- 选项卡开始 -->
+  <view class="melon-tabs">
+    <view class="tabs-message">
+      <view class="{{currentData === 0 ? 'active' : ''}}" data-current = "0" bindtap="checkCurrent">商品详情</view>
+      <view class="{{currentData === 1 ? 'active' : ''}}" data-current = "1" bindtap="checkCurrent">产品参数</view>
+      <view class="{{currentData === 2 ? 'active' : ''}}" data-current = "2" bindtap="checkCurrent">售后保障</view>
+    </view>
+    <view class="tabs-content">
+      <swiper class="content-items" current="{{currentData}}" bindchange="bindchange">
+        <swiper-item>
+          {{fruitsObj.detail}}
+        </swiper-item>
+        <swiper-item>
+          {{fruitsObj.parameter}}
+        </swiper-item>
+        <swiper-item>
+          {{fruitsObj.service}}
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <!-- 选项卡结束 -->
+</view>

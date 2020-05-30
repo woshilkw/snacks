@@ -1,0 +1,68 @@
+
+.lssc-category {
+    display: flex;
+    .category-click {
+        width: 20%;
+   
+        .tabs-title {
+            height: 100rpx;
+            line-height: 100rpx;
+            text-align: center;
+        }
+        .active{
+            border-left: 4px solid #a9966e;
+            color: #a9966e;
+        }
+      
+    }
+  
+    .category-commodity {
+        width: 80%;
+        border-left: 2px solid #eaeaea;
+        .commodity-swiper {
+          width: 100%;
+          height: 100vh;
+          .swiper-item {
+            width: 100%;
+            height: 200rpx;
+            .item-img{
+              width: 90%;
+              margin: 40rpx auto;
+              image {
+                width: 100%;
+                height: 200rpx;
+              }
+            }
+            .item-title{
+                font-size: 30rpx;
+                margin-top: -20rpx;
+                text-align: center;
+                color: #a5956f;
+            }
+            .item-imgs {
+                display: flex;
+                flex-wrap: wrap;
+                .imgs-item {
+                    width: 30%;
+                    height: 200rpx;
+                    .item-ngt{
+                        width: 100%;
+                        height: 150rpx;
+                        image {
+                            width: 50%;
+                            height: 50%;
+                            margin-top: 60rpx;
+                            margin-left: 60rpx;
+                        }
+                    }
+                    view {
+                        
+                        font-size: 24rpx;
+                        text-align: center;
+                    } 
+                }
+              }
+          }
+        }
+    }
+  }

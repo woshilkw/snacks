@@ -1,0 +1,5 @@
+<view class="lssc-cateWorld">
+  <view>
+    <my-coverage obj="{{fruits}}"/>
+  </view>
+</view>

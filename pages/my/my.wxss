@@ -1,0 +1,92 @@
+.lssc-my .aboutUS {
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: right;
+  padding: 20rpx;
+  color: white;
+  background-color: #a79770;
+}
+.lssc-my .lssc-my-address {
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #adadad;
+  text-align: center;
+}
+.lssc-my .lssc-my-address::after {
+  position: absolute;
+  right: 50rpx;
+  top: 42rpx;
+  content: " ";
+  height: 16rpx;
+  width: 16rpx;
+  border-top: 5rpx solid #a79770;
+  border-right: 5rpx solid #a79770;
+  transform: rotate(45deg);
+}
+.lssc-my .address-info .userName {
+  padding: 10rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #999999;
+}
+.lssc-my .address-info .telNumber {
+  padding: 10rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #999999;
+}
+.lssc-my .address-info .address {
+  border-bottom: 1px solid #ddd;
+  padding: 10rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #999999;
+}
+.lssc-my .lssc-my-order > .title {
+  border-bottom: 1px solid #ddd;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #999999;
+  text-align: center;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item {
+  border-bottom: 1rpx solid #ddd;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item .order-number {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #999999;
+  text-align: left;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item .order-content {
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item .order-content .left {
+  display: flex;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item .order-content .left .image-wrapper image {
+  width: 200rpx;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item .order-content .right {
+  color: #b23031;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item .order-bottom {
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lssc-my .lssc-my-order .order-list .order-list-item .order-bottom .right {
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  width: 160rpx;
+  color: white;
+  background-color: #b23031;
+}

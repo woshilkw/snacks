@@ -1,0 +1,64 @@
+.lssc-pay .lssc-pay-address {
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #adadad;
+  text-align: center;
+  border-bottom: 1rpx solid #adadad;
+}
+.lssc-pay .lssc-pay-address .top {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  text-align: left;
+}
+.lssc-pay .lssc-pay-address .bottom {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  text-align: left;
+}
+.lssc-pay .lssc-pay-address::after {
+  position: absolute;
+  right: 50rpx;
+  top: 42rpx;
+  content: " ";
+  height: 16rpx;
+  width: 16rpx;
+  border-top: 5rpx solid #a9966e;
+  border-right: 5rpx solid #a9966e;
+  transform: rotate(45deg);
+}
+.lssc-pay .lssc-pay-list {
+  padding: 10rpx;
+}
+.lssc-pay .lssc-pay-list .list-item {
+  padding: 10rpx;
+  height: 180rpx;
+  display: flex;
+  border-bottom: 2rpx solid #ddd;
+}
+.lssc-pay .lssc-pay-list .list-item .left .image-wrapper image {
+  width: 150rpx;
+}
+.lssc-pay .lssc-pay-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lssc-pay .lssc-pay-bottom .left {
+  padding: 20rpx;
+  color: #b56e71;
+}
+.lssc-pay .lssc-pay-bottom .right {
+  background-color: #a9966e;
+  color: white;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  width: 200rpx;
+}
